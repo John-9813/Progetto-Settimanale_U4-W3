@@ -17,6 +17,10 @@ public abstract class ElementoCatalogo {
         this.codiceISBN = codiceISBN;
     }
 
+    public ElementoCatalogo() {
+
+    }
+
     public UUID getCodiceISBN() {
         return codiceISBN;
     }
