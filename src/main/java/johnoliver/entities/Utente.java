@@ -3,6 +3,7 @@ package johnoliver.entities;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.time.LocalDate;
 import java.util.UUID;
 
 @Entity
@@ -15,6 +16,10 @@ public class Utente {
     private String dataDiNascità;
 
     public Utente() {
+    }
+
+    // Generato da intellij perchè non riuscivo a risolvere dei problemi..
+    public Utente(String mario, String rossi, LocalDate of, UUID uuid) {
     }
 
     public UUID getNumeroTessera() {

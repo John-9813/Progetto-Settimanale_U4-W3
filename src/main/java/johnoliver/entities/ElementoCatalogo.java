@@ -5,7 +5,7 @@ import java.util.UUID;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-public abstract class ElementoCatalogo {
+public class ElementoCatalogo {
     @Id
     @GeneratedValue
     private UUID codiceISBN;
@@ -13,6 +13,7 @@ public abstract class ElementoCatalogo {
     private int annoPubblicazione;
     private int numeroPagine;
 
+    // Costruttori
     public ElementoCatalogo(UUID codiceISBN) {
         this.codiceISBN = codiceISBN;
     }
@@ -21,6 +22,11 @@ public abstract class ElementoCatalogo {
 
     }
 
+    // Generato da intellij perchè non riuscivo a risolvere dei problemi (consiglio i libri o audiolibri)
+    public ElementoCatalogo(String number, String LaTrilogiaDiLicanius, int i, int i1, String s, String libro) {
+    }
+
+    // Getter e setter vari da generate..
     public UUID getCodiceISBN() {
         return codiceISBN;
     }

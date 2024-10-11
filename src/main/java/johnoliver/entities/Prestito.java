@@ -19,7 +19,7 @@ public class Prestito {
     @OneToOne
     private ElementoCatalogo elementoPrestato;
 
-    // https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html (dove ho cercato per usare LocalDate)
+    // https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html (dove ho cercato per usare LocalDate) e preso spunto dalla soluzione dell'esercizio di ieri
     private LocalDate dataInizioPrestito;
     private LocalDate dataRestituzionePrevista;
     private LocalDate dataRestituzioneEffettiva;
